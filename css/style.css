@@ -1,0 +1,47 @@
+body {
+    font-family: 'Segoe UI', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../img/gradient-galaxy-background-generat-ai-free-photo.jpg);
+    background-repeat: no-repeat;
+}
+
+.container {
+    background-size: cover;
+}
+
+
+.text__hid {}
+
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 10px;
+}
+
+.cell {
+    border: 1px solid #000;
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+    font-size: 34px;
+}
+
+.cell[data-value="X"] {
+    color: chartreuse;
+}
+
+.cell[data-value="=O"] {
+    color: aqua;
+}
